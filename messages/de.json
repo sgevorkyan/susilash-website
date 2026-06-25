@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "title": "Susi Lash — Luxus Wimpernstylistin | Susi Manukyan",
+    "description": "International anerkannte Luxus-Wimpernstylistin Susi Manukyan. Maßgeschneiderte Wimpernverlängerungen mit Präzision, Kunstfertigkeit und kompromissloser Eleganz.",
+    "ogTitle": "Susi Lash — Luxus Wimpernstylistin",
+    "ogImageAlt": "Susi Lash — Luxus Wimpernverlängerungen",
+    "jobTitle": "Luxus Wimpernstylistin"
+  },
+  "nav": {
+    "work": "Arbeiten",
+    "about": "Über uns",
+    "recognition": "Auszeichnungen",
+    "testimonials": "Stimmen",
+    "contact": "Kontakt",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen",
+    "language": "Sprache"
+  },
+  "hero": {
+    "tagline": "Luxus Wimpernstylistin",
+    "subtitle": "Maßgeschneiderte Luxus-Wimpernverlängerungen von der international anerkannten Künstlerin {artist}",
+    "instagram": "Instagram",
+    "scroll": "Scrollen",
+    "imageAlt": "Luxus Wimpernverlängerungen von Susi Lash"
+  },
+  "portfolio": {
+    "label": "Portfolio",
+    "title": "Signaturarbeiten",
+    "description": "Eine kuratierte Auswahl maßgeschneiderter Wimpernkunst — jedes Set ein Studium in Präzision, Balance und stiller Luxus.",
+    "viewImage": "Bild ansehen",
+    "items": {
+      "1": "Klassische Volumen-Wimpernverlängerungen — natürliche Eleganz",
+      "2": "Luxus Wimpernkunst im Detail",
+      "3": "Editorial Beauty-Porträt mit Wimpernverlängerungen",
+      "4": "Raffiniertes Mega-Volumen-Wimpernset",
+      "5": "Soft-Glam Wimpernverlängerungen im Studiolicht",
+      "6": "Maßgeschneidertes Hybrid-Wimperndesign"
+    }
+  },
+  "about": {
+    "label": "Die Künstlerin",
+    "title": "Über {name}",
+    "imageAlt": "{artist} — Luxus Wimpernstylistin",
+    "bio": [
+      "Susi Manukyan ist eine international anerkannte Wimpernstylistin, deren Arbeit an der Schnittstelle von Präzisionshandwerk und High Fashion steht. Mit über einem Jahrzehnt engagierter Praxis hat sie sich einen Ruf für Wimpernverlängerungen erworben, die natürliche Schönheit mit stiller Selbstsicherheit betonen.",
+      "In Europa und den Vereinigten Staaten ausgebildet, beherrscht Susi jede Disziplin der Wimpernkunst — von Classic und Hybrid bis Volume und Mega Volume. Ihr Ansatz ist zutiefst persönlich: Jedes Set wird in Zusammenarbeit mit der Kundin entworfen und auf Gesichtszüge, Lebensstil und ästhetische Vision abgestimmt.",
+      "Ihr Studio bietet eine Oase ruhiger Raffinesse, in der jedes Detail — von der Beratung bis zum abschließenden Bürstenstrich — denselben Exzellenzstandard widerspiegelt, den man in den feinsten Beauty-Häusern der Welt findet."
+    ],
+    "specializationsLabel": "Spezialisierungen",
+    "specializations": [
+      "Classic & Hybrid Extensions",
+      "Volume & Mega Volume",
+      "Wimpernlifting & Färben",
+      "Korrektur-Wimperndesign",
+      "Braut- & Editorial-Styling",
+      "Private Masterclasses"
+    ]
+  },
+  "recognition": {
+    "label": "Auszeichnung",
+    "title": "Anerkennung",
+    "description": "Eine Karriere geprägt von Meisterschaft, internationaler Anerkennung und einem unerschütterlichen Engagement für die Kunst der Wimpernverlängerung.",
+    "items": [
+      {
+        "year": "2024",
+        "title": "Internationale Wimpernstylistin des Jahres",
+        "organization": "World Lash Association",
+        "description": "Ausgezeichnet für Exzellenz in Volume- und Hybrid-Wimpernkunst."
+      },
+      {
+        "year": "2023",
+        "title": "Goldmedaille — Kreatives Wimperndesign",
+        "organization": "Global Beauty Championships",
+        "description": "Erster Platz in der internationalen Kategorie für kreatives Wimperndesign."
+      },
+      {
+        "year": "2023",
+        "title": "Master Wimperntechnikerin Zertifizierung",
+        "organization": "Elite Lash Academy",
+        "description": "Fortgeschrittene Zertifizierung in Volume, Mega Volume und Korrekturtechniken."
+      },
+      {
+        "year": "2022",
+        "title": "Featured Artist",
+        "organization": "Lash Inc. Magazine",
+        "description": "Editorial-Feature über die Evolution von Luxus-Wimpernverlängerungen."
+      },
+      {
+        "year": "2022",
+        "title": "Europäischer Wimpernwettbewerb — Finalistin",
+        "organization": "EuroLash Summit",
+        "description": "Top-Fünf-Finalistin unter über 200 internationalen Teilnehmerinnen."
+      },
+      {
+        "year": "2021",
+        "title": "Zertifizierte Wimpern-Dozentin",
+        "organization": "International Lash Institute",
+        "description": "Lizenziert zur Ausbildung und Zertifizierung angehender Wimpernprofis."
+      }
+    ]
+  },
+  "testimonials": {
+    "label": "Stimmen",
+    "title": "Kundenstimmen",
+    "items": [
+      {
+        "quote": "Susis Arbeit ist wie nichts, was ich je erlebt habe. Jede Wimper wird mit Absicht platziert — das Ergebnis ist mühelos glamourös und doch vollkommen natürlich.",
+        "author": "Victoria R.",
+        "detail": "Editorial-Kundin"
+      },
+      {
+        "quote": "Ich bin extra aus London für Susis Kunst angereist. Ihre Liebe zum Detail und ihre raffinierte Ästhetik sind wahrhaftig von Weltklasse.",
+        "author": "Amelia K.",
+        "detail": "Internationale Kundin"
+      },
+      {
+        "quote": "Das luxuriöseste Wimpernerlebnis, das ich je hatte. Von der Beratung bis zum Endergebnis fühlt sich alles maßgeschneidert und durchdacht an.",
+        "author": "Danielle M.",
+        "detail": "Prominente Kundin"
+      }
+    ]
+  },
+  "contact": {
+    "label": "Kontakt",
+    "title": "Beginnen Sie Ihre Reise",
+    "description": "Erleben Sie die Kunst der Luxus-Wimpernverlängerung. Kontaktieren Sie uns über Instagram, Telefon oder E-Mail.",
+    "instagram": "Instagram",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "location": "Standort",
+    "openInMaps": "In Karten öffnen"
+  },
+  "footer": {
+    "tagline": "Luxus Wimpernkunst von {artist}",
+    "instagram": "Instagram",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "lightbox": {
+    "close": "Bildbetrachter schließen"
+  }
+}

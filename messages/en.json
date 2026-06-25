@@ -1,0 +1,143 @@
+{
+  "metadata": {
+    "title": "Susi Lash — Luxury Lash Artist | Susi Manukyan",
+    "description": "Internationally recognized luxury lash artist Susi Manukyan. Bespoke lash extensions crafted with precision, artistry, and uncompromising elegance.",
+    "ogTitle": "Susi Lash — Luxury Lash Artist",
+    "ogImageAlt": "Susi Lash — Luxury Lash Extensions",
+    "jobTitle": "Luxury Lash Artist"
+  },
+  "nav": {
+    "work": "Work",
+    "about": "About",
+    "recognition": "Recognition",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "language": "Language"
+  },
+  "hero": {
+    "tagline": "Luxury Lash Artist",
+    "subtitle": "Bespoke luxury lash extensions by internationally recognized artist {artist}",
+    "instagram": "Instagram",
+    "scroll": "Scroll",
+    "imageAlt": "Luxury lash extensions by Susi Lash"
+  },
+  "portfolio": {
+    "label": "Portfolio",
+    "title": "Signature Work",
+    "description": "A curated selection of bespoke lash artistry — each set a study in precision, balance, and quiet luxury.",
+    "viewImage": "View image",
+    "items": {
+      "1": "Classic volume lash extensions — natural elegance",
+      "2": "Luxury lash artistry close-up detail",
+      "3": "Editorial beauty portrait with lash extensions",
+      "4": "Refined mega volume lash set",
+      "5": "Soft glam lash extensions in studio lighting",
+      "6": "Bespoke hybrid lash design"
+    }
+  },
+  "about": {
+    "label": "The Artist",
+    "title": "About {name}",
+    "imageAlt": "{artist} — luxury lash artist",
+    "bio": [
+      "Susi Manukyan is an internationally recognized lash artist whose work sits at the intersection of precision craft and high fashion. With over a decade of dedicated practice, she has built a reputation for creating lash extensions that enhance natural beauty with quiet confidence.",
+      "Trained across Europe and the United States, Susi has mastered every discipline of lash artistry — from classic and hybrid to volume and mega volume. Her approach is deeply personal: each set is designed in collaboration with the client, tailored to their features, lifestyle, and aesthetic vision.",
+      "Her studio offers a sanctuary of calm refinement, where every detail — from the consultation to the final brush — reflects the same standard of excellence found in the world's finest beauty houses."
+    ],
+    "specializationsLabel": "Specializations",
+    "specializations": [
+      "Classic & Hybrid Extensions",
+      "Volume & Mega Volume",
+      "Lash Lift & Tint",
+      "Corrective Lash Design",
+      "Bridal & Editorial Styling",
+      "Private Masterclasses"
+    ]
+  },
+  "recognition": {
+    "label": "Distinction",
+    "title": "Recognition",
+    "description": "A career defined by mastery, international acclaim, and an unwavering commitment to the art of lash extensions.",
+    "items": [
+      {
+        "year": "2024",
+        "title": "International Lash Artist of the Year",
+        "organization": "World Lash Association",
+        "description": "Recognized for excellence in volume and hybrid lash artistry."
+      },
+      {
+        "year": "2023",
+        "title": "Gold Medal — Creative Lash Design",
+        "organization": "Global Beauty Championships",
+        "description": "First place in the international creative lash category."
+      },
+      {
+        "year": "2023",
+        "title": "Master Lash Technician Certification",
+        "organization": "Elite Lash Academy",
+        "description": "Advanced certification in volume, mega volume, and corrective techniques."
+      },
+      {
+        "year": "2022",
+        "title": "Featured Artist",
+        "organization": "Lash Inc. Magazine",
+        "description": "Editorial feature on the evolution of luxury lash extensions."
+      },
+      {
+        "year": "2022",
+        "title": "European Lash Competition — Finalist",
+        "organization": "EuroLash Summit",
+        "description": "Top five finalist among 200+ international competitors."
+      },
+      {
+        "year": "2021",
+        "title": "Certified Lash Educator",
+        "organization": "International Lash Institute",
+        "description": "Licensed to train and certify aspiring lash professionals."
+      }
+    ]
+  },
+  "testimonials": {
+    "label": "Kind Words",
+    "title": "Client Testimonials",
+    "items": [
+      {
+        "quote": "Susi's work is unlike anything I've experienced. Every lash is placed with intention — the result is effortlessly glamorous yet completely natural.",
+        "author": "Victoria R.",
+        "detail": "Editorial Client"
+      },
+      {
+        "quote": "I've traveled from London specifically for Susi's artistry. Her attention to detail and refined aesthetic are truly world-class.",
+        "author": "Amelia K.",
+        "detail": "International Client"
+      },
+      {
+        "quote": "The most luxurious lash experience I've ever had. From consultation to the final look, everything feels bespoke and considered.",
+        "author": "Danielle M.",
+        "detail": "Celebrity Client"
+      }
+    ]
+  },
+  "contact": {
+    "label": "Get in Touch",
+    "title": "Begin Your Journey",
+    "description": "Experience the art of luxury lash extensions. Reach out via Instagram, phone, or email to connect.",
+    "instagram": "Instagram",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "openInMaps": "Open in Maps"
+  },
+  "footer": {
+    "tagline": "Luxury Lash Artistry by {artist}",
+    "instagram": "Instagram",
+    "email": "Email",
+    "phone": "Phone",
+    "rights": "All rights reserved."
+  },
+  "lightbox": {
+    "close": "Close image viewer"
+  }
+}
