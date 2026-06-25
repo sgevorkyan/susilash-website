@@ -1,5 +1,5 @@
-import { ComingSoonScreen } from "@/components/coming-soon/ComingSoonScreen";
+import { redirect } from "next/navigation";
 
 export default function ComingSoonPage() {
-  return <ComingSoonScreen />;
+  redirect("/");
 }

@@ -25,14 +25,29 @@ function setLocaleCookie(response: NextResponse, locale: Locale) {
 export default function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  if (pathname === "/coming-soon" || pathname === "/api/preview/unlock") {
+  if (pathname === "/api/preview/unlock") {
     return NextResponse.next();
   }
 
   const previewCookie = request.cookies.get(PREVIEW_COOKIE)?.value;
+  const live = isSiteLive();
+  const hasPreview = hasPreviewAccess(previewCookie);
 
-  if (!isSiteLive() && !hasPreviewAccess(previewCookie)) {
-    return NextResponse.redirect(new URL("/coming-soon", request.url));
+  if (pathname === "/coming-soon") {
+    return NextResponse.redirect(new URL("/", request.url));
+  }
+
+  if (!live && !hasPreview) {
+    if (pathname === "/") {
+      return NextResponse.next();
+    }
+
+    const segment = pathname.split("/")[1];
+    if (segment && isValidLocale(segment)) {
+      return NextResponse.redirect(new URL("/", request.url));
+    }
+
+    return NextResponse.redirect(new URL("/", request.url));
   }
 
   if (pathname === "/") {
@@ -57,10 +72,5 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: [
-    "/",
-    "/coming-soon",
-    "/api/preview/unlock",
-    "/(hy|en|de|ru)/:path*",
-  ],
+  matcher: ["/", "/((?!_next|_vercel|.*\\..*).*)"],
 };

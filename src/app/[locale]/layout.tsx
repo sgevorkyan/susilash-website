@@ -8,7 +8,6 @@ import { Footer } from "@/components/layout/Footer";
 import { LocalePersistence } from "@/components/layout/LocalePersistence";
 import { routing, type Locale } from "@/i18n/routing";
 import { SITE, OG_IMAGE } from "@/lib/constants";
-import "../globals.css";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -148,21 +147,17 @@ export default async function LocaleLayout({ children, params }: Props) {
       : `${cormorant.variable} ${inter.variable}`;
 
   return (
-    <html lang={locale} className="scroll-smooth">
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-      </head>
-      <body className={`${fontClass} antialiased`}>
-        <NextIntlClientProvider messages={messages}>
-          <LocalePersistence />
-          <Navigation />
-          <main>{children}</main>
-          <Footer />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <div className={fontClass}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <NextIntlClientProvider messages={messages}>
+        <LocalePersistence />
+        <Navigation />
+        <main>{children}</main>
+        <Footer />
+      </NextIntlClientProvider>
+    </div>
   );
 }

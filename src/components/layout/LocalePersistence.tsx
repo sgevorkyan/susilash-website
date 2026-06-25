@@ -13,6 +13,10 @@ export function LocalePersistence() {
   const hasSynced = useRef(false);
 
   useEffect(() => {
+    document.documentElement.lang = locale;
+  }, [locale]);
+
+  useEffect(() => {
     if (hasSynced.current) return;
 
     const preferred = getPersistedLocale();
