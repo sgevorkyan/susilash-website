@@ -1,13 +1,19 @@
 import type { Metadata } from "next";
+import { cookies } from "next/headers";
+import { notFound, redirect } from "next/navigation";
 import { Cormorant_Garamond, Inter, Noto_Sans_Armenian } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
-import { notFound } from "next/navigation";
 import { Navigation } from "@/components/layout/Navigation";
 import { Footer } from "@/components/layout/Footer";
 import { LocalePersistence } from "@/components/layout/LocalePersistence";
 import { routing, type Locale } from "@/i18n/routing";
 import { SITE, OG_IMAGE } from "@/lib/constants";
+import {
+  PREVIEW_COOKIE,
+  hasPreviewAccess,
+  isSiteLive,
+} from "@/lib/site-gate";
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
@@ -107,6 +113,14 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   if (!routing.locales.includes(locale as Locale)) {
     notFound();
+  }
+
+  const cookieStore = await cookies();
+  if (
+    !isSiteLive() &&
+    !hasPreviewAccess(cookieStore.get(PREVIEW_COOKIE)?.value)
+  ) {
+    redirect("/");
   }
 
   setRequestLocale(locale);

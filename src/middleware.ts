@@ -12,7 +12,7 @@ import {
   isSiteLive,
 } from "./lib/site-gate";
 
-const handleI18nRouting = createMiddleware(routing);
+const intlMiddleware = createMiddleware(routing);
 
 function setLocaleCookie(response: NextResponse, locale: Locale) {
   response.cookies.set(LOCALE_PREFERENCE_KEY, locale, {
@@ -29,22 +29,16 @@ export default function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  const previewCookie = request.cookies.get(PREVIEW_COOKIE)?.value;
-  const live = isSiteLive();
-  const hasPreview = hasPreviewAccess(previewCookie);
-
   if (pathname === "/coming-soon") {
     return NextResponse.redirect(new URL("/", request.url));
   }
 
-  if (!live && !hasPreview) {
+  const previewCookie = request.cookies.get(PREVIEW_COOKIE)?.value;
+  const gated = !isSiteLive() && !hasPreviewAccess(previewCookie);
+
+  if (gated) {
     if (pathname === "/") {
       return NextResponse.next();
-    }
-
-    const segment = pathname.split("/")[1];
-    if (segment && isValidLocale(segment)) {
-      return NextResponse.redirect(new URL("/", request.url));
     }
 
     return NextResponse.redirect(new URL("/", request.url));
@@ -61,7 +55,7 @@ export default function middleware(request: NextRequest) {
     }
   }
 
-  const response = handleI18nRouting(request);
+  const response = intlMiddleware(request);
 
   const segment = pathname.split("/")[1];
   if (segment && isValidLocale(segment)) {
@@ -72,5 +66,5 @@ export default function middleware(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/", "/((?!_next|_vercel|.*\\..*).*)"],
+  matcher: ["/((?!api|_next|_vercel|.*\\..*).*)"],
 };
