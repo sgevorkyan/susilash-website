@@ -47,6 +47,10 @@ body.font-armenian {
   text-shadow: 0 2px 24px rgba(0, 0, 0, 0.5);
 }
 
+.pb-safe {
+  padding-bottom: max(2.5rem, calc(env(safe-area-inset-bottom, 0px) + 1.5rem));
+}
+
 .hero-logo-light {
   filter: brightness(0) invert(1) drop-shadow(0 2px 16px rgba(0, 0, 0, 0.45));
 }

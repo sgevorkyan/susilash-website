@@ -2,6 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { Button } from "@/components/ui/Button";
 import { InstagramIcon } from "@/components/ui/InstagramIcon";
+import { TelegramIcon } from "@/components/ui/TelegramIcon";
 import { CONTACT } from "@/lib/constants";
 import { AddressLink } from "@/components/ui/AddressLink";
 
@@ -24,14 +25,18 @@ export async function Contact() {
             </p>
           </FadeIn>
 
-          <FadeIn delay={0.2} className="mt-12 flex justify-center">
+          <FadeIn delay={0.2} className="mt-12 flex flex-col sm:flex-row flex-wrap items-center justify-center gap-4">
             <Button href={CONTACT.instagram} external>
               <InstagramIcon />
               {t("instagram")}
             </Button>
+            <Button href={CONTACT.telegram} variant="outline" external>
+              <TelegramIcon />
+              {t("telegram")}
+            </Button>
           </FadeIn>
 
-          <FadeIn delay={0.4} className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pt-16 border-t border-foreground/8">
+          <FadeIn delay={0.4} className="mt-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 pt-16 border-t border-foreground/8 max-w-4xl mx-auto">
             <div>
               <p className="text-xs tracking-[0.2em] uppercase text-muted mb-3">
                 {t("phone")}
@@ -65,6 +70,19 @@ export async function Contact() {
                 className="text-sm hover:text-gold transition-colors"
               >
                 {CONTACT.instagramHandle}
+              </a>
+            </div>
+            <div>
+              <p className="text-xs tracking-[0.2em] uppercase text-muted mb-3">
+                {t("telegram")}
+              </p>
+              <a
+                href={CONTACT.telegram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm hover:text-gold transition-colors"
+              >
+                {CONTACT.telegramCommunity}
               </a>
             </div>
             <div>

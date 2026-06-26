@@ -2,18 +2,34 @@
 
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { Logo } from "@/components/ui/Logo";
-import { NAV_ANCHORS } from "@/lib/constants";
+import { NAV_LINKS, type NavLink } from "@/lib/constants";
+
+function getNavHref(link: NavLink) {
+  if ("hash" in link) {
+    return { pathname: "/" as const, hash: link.hash };
+  }
+  return link.href;
+}
 
 export function Navigation() {
   const t = useTranslations("nav");
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const onHero = !scrolled && !menuOpen;
+  const isHome = pathname === "/";
+  const onHero = isHome && !scrolled && !menuOpen;
   const barColor = onHero ? "bg-white" : "bg-foreground";
+
+  const linkClass = (extra = "") =>
+    `text-xs tracking-[0.2em] uppercase transition-colors duration-300 ${
+      onHero
+        ? "text-white/90 hover:text-white hero-scrim-text"
+        : "text-foreground/70 hover:text-foreground"
+    } ${extra}`.trim();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -32,7 +48,7 @@ export function Navigation() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled || menuOpen
+          scrolled || menuOpen || !isHome
             ? "bg-background/95 backdrop-blur-md border-b border-foreground/5"
             : "bg-transparent"
         }`}
@@ -53,18 +69,11 @@ export function Navigation() {
           </Link>
 
           <ul className="hidden lg:flex items-center gap-8">
-            {NAV_ANCHORS.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  className={`text-xs tracking-[0.2em] uppercase transition-colors duration-300 ${
-                    onHero
-                      ? "text-white/90 hover:text-white hero-scrim-text"
-                      : "text-foreground/70 hover:text-foreground"
-                  }`}
-                >
+            {NAV_LINKS.map((link) => (
+              <li key={link.key}>
+                <Link href={getNavHref(link)} className={linkClass()}>
                   {t(link.key)}
-                </a>
+                </Link>
               </li>
             ))}
             <li>
@@ -98,16 +107,16 @@ export function Navigation() {
         }`}
       >
         <nav className="flex flex-col items-center justify-center h-full gap-10 px-6">
-          {NAV_ANCHORS.map((link, i) => (
-            <a
-              key={link.href}
-              href={link.href}
+          {NAV_LINKS.map((link, i) => (
+            <Link
+              key={link.key}
+              href={getNavHref(link)}
               onClick={() => setMenuOpen(false)}
               className="font-serif text-3xl font-light tracking-wide text-foreground/80 hover:text-foreground transition-colors"
               style={{ transitionDelay: menuOpen ? `${i * 50}ms` : "0ms" }}
             >
               {t(link.key)}
-            </a>
+            </Link>
           ))}
 
           <div className="mt-6 pt-10 border-t border-foreground/8 w-full max-w-xs">

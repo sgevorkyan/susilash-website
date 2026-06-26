@@ -3,56 +3,78 @@ export interface PortfolioImage {
   src: string;
   width: number;
   height: number;
-  span?: "tall" | "wide" | "normal";
 }
 
 export const PORTFOLIO_IMAGES: PortfolioImage[] = [
   {
     id: "1",
-    src: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=800&q=80",
-    width: 800,
-    height: 1000,
-    span: "tall",
+    src: "/portfolio/signature-01.webp",
+    width: 2876,
+    height: 2876,
   },
   {
     id: "2",
-    src: "https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=800&q=80",
-    width: 800,
-    height: 600,
-    span: "wide",
+    src: "/portfolio/signature-02.webp",
+    width: 1280,
+    height: 1280,
   },
   {
     id: "3",
-    src: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&q=80",
-    width: 800,
-    height: 1000,
-    span: "normal",
+    src: "/portfolio/signature-03.webp",
+    width: 2684,
+    height: 2684,
   },
   {
     id: "4",
-    src: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80",
-    width: 800,
-    height: 1200,
-    span: "tall",
+    src: "/portfolio/signature-04.webp",
+    width: 1280,
+    height: 1280,
   },
   {
     id: "5",
-    src: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=800&q=80",
-    width: 800,
-    height: 600,
-    span: "normal",
+    src: "/portfolio/signature-05.webp",
+    width: 1280,
+    height: 1280,
   },
   {
     id: "6",
-    src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=800&q=80",
-    width: 800,
-    height: 900,
-    span: "normal",
+    src: "/portfolio/signature-06.webp",
+    width: 2693,
+    height: 2693,
   },
 ];
 
-export const ABOUT_IMAGE =
-  "https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80";
+export const ABOUT_IMAGE = "/about/susi-about.webp";
+
+export interface ProductImage {
+  src: string;
+  width: number;
+  height: number;
+}
+
+/** Product photos in public/products/ */
+export const PRODUCT_IMAGES: Record<string, ProductImage | null> = {
+  "lash-extensions": {
+    src: "/products/lash-extensions.webp",
+    width: 4499,
+    height: 4498,
+  },
+  "lash-boxes": {
+    src: "/products/lash-boxes.webp",
+    width: 4058,
+    height: 5073,
+  },
+  "lash-brushes": {
+    src: "/products/lash-brushes.webp",
+    width: 3714,
+    height: 4643,
+  },
+  "lash-mirrors": {
+    src: "/products/lash-mirrors.webp",
+    width: 3847,
+    height: 4809,
+  },
+};
 
 export const HERO_IMAGE =
   "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=1920&q=85";

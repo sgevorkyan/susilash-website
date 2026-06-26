@@ -9,6 +9,7 @@
   "nav": {
     "work": "Work",
     "about": "About",
+    "products": "Products",
     "recognition": "Recognition",
     "testimonials": "Testimonials",
     "contact": "Contact",
@@ -20,6 +21,7 @@
     "tagline": "Luxury Lash Artist",
     "subtitle": "Bespoke luxury lash extensions by internationally recognized artist {artist}",
     "instagram": "Instagram",
+    "telegram": "Telegram",
     "scroll": "Scroll",
     "imageAlt": "Luxury lash extensions by Susi Lash"
   },
@@ -29,17 +31,17 @@
     "description": "A curated selection of bespoke lash artistry — each set a study in precision, balance, and quiet luxury.",
     "viewImage": "View image",
     "items": {
-      "1": "Classic volume lash extensions — natural elegance",
-      "2": "Luxury lash artistry close-up detail",
-      "3": "Editorial beauty portrait with lash extensions",
-      "4": "Refined mega volume lash set",
-      "5": "Soft glam lash extensions in studio lighting",
-      "6": "Bespoke hybrid lash design"
+      "1": "Magic",
+      "2": "Wet Look",
+      "3": "Sky",
+      "4": "Glam",
+      "5": "Sky",
+      "6": "Liner"
     }
   },
   "about": {
-    "label": "The Artist",
-    "title": "About {name}",
+    "label": "Her Story",
+    "title": "About Susi",
     "imageAlt": "{artist} — luxury lash artist",
     "bio": [
       "Susi Manukyan is an internationally recognized lash artist whose work sits at the intersection of precision craft and high fashion. With over a decade of dedicated practice, she has built a reputation for creating lash extensions that enhance natural beauty with quiet confidence.",
@@ -54,6 +56,35 @@
       "Corrective Lash Design",
       "Bridal & Editorial Styling",
       "Private Masterclasses"
+    ]
+  },
+  "products": {
+    "label": "The Collection",
+    "title": "Susi Lash Products",
+    "description": "A professional lash care line developed by Susi — refined formulas and tools created for artists and clients who expect the same standard of excellence as her studio work.",
+    "cta": "Inquire on Instagram",
+    "telegramCta": "Join on Telegram",
+    "items": [
+      {
+        "id": "lash-extensions",
+        "name": "Lash Extensions",
+        "description": "Premium lash trays in curated lengths and curls — selected for precision application and signature Susi Lash styling."
+      },
+      {
+        "id": "lash-boxes",
+        "name": "Lash Boxes",
+        "description": "Elegant storage solutions designed to keep lash products organized, protected, and presentation-ready in the studio."
+      },
+      {
+        "id": "lash-brushes",
+        "name": "Lash Brushes",
+        "description": "Professional application brushes crafted for controlled, flawless placement during every lash service."
+      },
+      {
+        "id": "lash-mirrors",
+        "name": "Lash Mirrors",
+        "description": "Precision mirrors for detailed lash work — essential tools for perfect angles and refined finishing."
+      }
     ]
   },
   "recognition": {
@@ -102,6 +133,7 @@
   "testimonials": {
     "label": "Kind Words",
     "title": "Client Testimonials",
+    "description": "Reflections from clients who have experienced the art of luxury lash extensions with Susi Manukyan.",
     "items": [
       {
         "quote": "Susi's work is unlike anything I've experienced. Every lash is placed with intention — the result is effortlessly glamorous yet completely natural.",
@@ -123,8 +155,9 @@
   "contact": {
     "label": "Get in Touch",
     "title": "Begin Your Journey",
-    "description": "Experience the art of luxury lash extensions. Reach out via Instagram, phone, or email to connect.",
+    "description": "Experience the art of luxury lash extensions. Reach out via Instagram, Telegram, phone, or email to connect.",
     "instagram": "Instagram",
+    "telegram": "Telegram",
     "email": "Email",
     "phone": "Phone",
     "location": "Location",
@@ -133,6 +166,7 @@
   "footer": {
     "tagline": "Luxury Lash Artistry by {artist}",
     "instagram": "Instagram",
+    "telegram": "Telegram",
     "email": "Email",
     "phone": "Phone",
     "rights": "All rights reserved."

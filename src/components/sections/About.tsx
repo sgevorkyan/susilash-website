@@ -11,11 +11,17 @@ export async function About() {
   const specializations = t.raw("specializations") as string[];
 
   return (
-    <section id="about" className="py-24 md:py-32 lg:py-40 bg-beige/40">
+    <section id="about" className="py-16 md:py-24 lg:py-32 bg-beige/40">
       <div className="mx-auto px-6 md:px-12 lg:px-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <SectionHeading
+          label={t("label")}
+          title={t("title")}
+          className="mb-8 md:mb-10 lg:mb-14"
+        />
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16 xl:gap-20 items-start">
           <FadeIn>
-            <div className="relative aspect-[3/4] max-w-lg mx-auto lg:mx-0 overflow-hidden">
+            <div className="relative aspect-[3/4] max-w-sm mx-auto lg:max-w-none lg:mx-0 overflow-hidden">
               <Image
                 src={ABOUT_IMAGE}
                 alt={t("imageAlt", { artist: SITE.artist })}
@@ -27,12 +33,7 @@ export async function About() {
           </FadeIn>
 
           <div>
-            <SectionHeading
-              label={t("label")}
-              title={t("title", { name: SITE.artistFirstName })}
-            />
-
-            <div className="space-y-6">
+            <div className="space-y-5 md:space-y-6">
               {bio.map((paragraph, i) => (
                 <FadeIn key={i} delay={i * 0.15}>
                   <p className="text-muted text-base md:text-lg leading-relaxed font-light">
@@ -42,8 +43,8 @@ export async function About() {
               ))}
             </div>
 
-            <FadeIn delay={0.5} className="mt-12">
-              <p className="text-xs tracking-[0.3em] uppercase text-gold mb-6">
+            <FadeIn delay={0.5} className="mt-8 md:mt-10">
+              <p className="text-xs tracking-[0.3em] uppercase text-gold mb-5 md:mb-6">
                 {t("specializationsLabel")}
               </p>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">

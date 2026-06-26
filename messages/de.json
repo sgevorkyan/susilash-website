@@ -9,6 +9,7 @@
   "nav": {
     "work": "Arbeiten",
     "about": "Über uns",
+    "products": "Produkte",
     "recognition": "Auszeichnungen",
     "testimonials": "Stimmen",
     "contact": "Kontakt",
@@ -20,6 +21,7 @@
     "tagline": "Luxus Wimpernstylistin",
     "subtitle": "Maßgeschneiderte Luxus-Wimpernverlängerungen von der international anerkannten Künstlerin {artist}",
     "instagram": "Instagram",
+    "telegram": "Telegram",
     "scroll": "Scrollen",
     "imageAlt": "Luxus Wimpernverlängerungen von Susi Lash"
   },
@@ -29,17 +31,17 @@
     "description": "Eine kuratierte Auswahl maßgeschneiderter Wimpernkunst — jedes Set ein Studium in Präzision, Balance und stiller Luxus.",
     "viewImage": "Bild ansehen",
     "items": {
-      "1": "Klassische Volumen-Wimpernverlängerungen — natürliche Eleganz",
-      "2": "Luxus Wimpernkunst im Detail",
-      "3": "Editorial Beauty-Porträt mit Wimpernverlängerungen",
-      "4": "Raffiniertes Mega-Volumen-Wimpernset",
-      "5": "Soft-Glam Wimpernverlängerungen im Studiolicht",
-      "6": "Maßgeschneidertes Hybrid-Wimperndesign"
+      "1": "Magic",
+      "2": "Wet Look",
+      "3": "Sky",
+      "4": "Glam",
+      "5": "Sky",
+      "6": "Liner"
     }
   },
   "about": {
-    "label": "Die Künstlerin",
-    "title": "Über {name}",
+    "label": "Ihre Geschichte",
+    "title": "Über Susi",
     "imageAlt": "{artist} — Luxus Wimpernstylistin",
     "bio": [
       "Susi Manukyan ist eine international anerkannte Wimpernstylistin, deren Arbeit an der Schnittstelle von Präzisionshandwerk und High Fashion steht. Mit über einem Jahrzehnt engagierter Praxis hat sie sich einen Ruf für Wimpernverlängerungen erworben, die natürliche Schönheit mit stiller Selbstsicherheit betonen.",
@@ -54,6 +56,35 @@
       "Korrektur-Wimperndesign",
       "Braut- & Editorial-Styling",
       "Private Masterclasses"
+    ]
+  },
+  "products": {
+    "label": "Die Kollektion",
+    "title": "Susi Lash Produkte",
+    "description": "Eine professionelle Wimpernpflegelinie von Susi — raffinierte Formeln und Tools für Artists und Kundinnen, die denselben Exzellenzstandard erwarten wie ihre Studioarbeit.",
+    "cta": "Anfrage auf Instagram",
+    "telegramCta": "Auf Telegram beitreten",
+    "items": [
+      {
+        "id": "lash-extensions",
+        "name": "Lash Extensions",
+        "description": "Premium-Wimperntrays in kuratierten Längen und Biegungen — für präzise Applikation und den Susi-Lash-Signaturstil."
+      },
+      {
+        "id": "lash-boxes",
+        "name": "Lash Boxes",
+        "description": "Elegante Aufbewahrungslösungen, die Wimpernprodukte organisiert, geschützt und präsentationsbereit im Studio halten."
+      },
+      {
+        "id": "lash-brushes",
+        "name": "Lash Brushes",
+        "description": "Professionelle Applikationspinsel für kontrollierte, makellose Platzierung bei jedem Wimpernservice."
+      },
+      {
+        "id": "lash-mirrors",
+        "name": "Lash Mirrors",
+        "description": "Präzisionsspiegel für detaillierte Wimpernarbeit — unverzichtbare Tools für perfekte Winkel und feine Finishes."
+      }
     ]
   },
   "recognition": {
@@ -102,6 +133,7 @@
   "testimonials": {
     "label": "Stimmen",
     "title": "Kundenstimmen",
+    "description": "Stimmen von Kundinnen, die Susi Manukyans Kunst der luxuriösen Wimpernverlängerungen erlebt haben.",
     "items": [
       {
         "quote": "Susis Arbeit ist wie nichts, was ich je erlebt habe. Jede Wimper wird mit Absicht platziert — das Ergebnis ist mühelos glamourös und doch vollkommen natürlich.",
@@ -123,8 +155,9 @@
   "contact": {
     "label": "Kontakt",
     "title": "Beginnen Sie Ihre Reise",
-    "description": "Erleben Sie die Kunst der Luxus-Wimpernverlängerung. Kontaktieren Sie uns über Instagram, Telefon oder E-Mail.",
+    "description": "Erleben Sie die Kunst der Luxus-Wimpernverlängerung. Kontaktieren Sie uns über Instagram, Telegram, Telefon oder E-Mail.",
     "instagram": "Instagram",
+    "telegram": "Telegram",
     "email": "E-Mail",
     "phone": "Telefon",
     "location": "Standort",
@@ -133,6 +166,7 @@
   "footer": {
     "tagline": "Luxus Wimpernkunst von {artist}",
     "instagram": "Instagram",
+    "telegram": "Telegram",
     "email": "E-Mail",
     "phone": "Telefon",
     "rights": "Alle Rechte vorbehalten."

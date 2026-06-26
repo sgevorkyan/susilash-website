@@ -3,6 +3,7 @@
 import { useCallback, useRef, useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { InstagramIcon } from "@/components/ui/InstagramIcon";
+import { TelegramIcon } from "@/components/ui/TelegramIcon";
 import { CONTACT, SITE } from "@/lib/constants";
 import { LOCALE_PREFERENCE_KEY, isValidLocale } from "@/lib/locale-persistence";
 import { routing } from "@/i18n/routing";
@@ -49,7 +50,7 @@ export function RootLanding() {
   }, [resetTaps, status, unlock]);
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center px-6 text-center">
+    <main className="min-h-dvh flex flex-col items-center justify-center px-6 pt-[env(safe-area-inset-top,0px)] pb-safe text-center">
       <button
         type="button"
         onPointerUp={(e) => {
@@ -72,6 +73,10 @@ export function RootLanding() {
         <Button href={CONTACT.instagram} variant="outline" external>
           <InstagramIcon />
           Instagram
+        </Button>
+        <Button href={CONTACT.telegram} variant="outline" external>
+          <TelegramIcon />
+          Telegram
         </Button>
         <Button href={`mailto:${CONTACT.email}`}>Book Appointment</Button>
       </div>

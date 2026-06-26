@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { Button } from "@/components/ui/Button";
 import { InstagramIcon } from "@/components/ui/InstagramIcon";
+import { TelegramIcon } from "@/components/ui/TelegramIcon";
 import { Logo } from "@/components/ui/Logo";
 import { SITE, CONTACT } from "@/lib/constants";
 import { HERO_IMAGE } from "@/lib/data";
@@ -13,7 +14,7 @@ export function Hero() {
   const t = useTranslations("hero");
 
   return (
-    <section className="relative h-screen min-h-[700px] flex items-end overflow-hidden">
+    <section className="relative min-h-dvh min-h-[700px] flex items-end overflow-hidden">
       <Image
         src={HERO_IMAGE}
         alt={t("imageAlt")}
@@ -27,7 +28,7 @@ export function Hero() {
       {/* Bottom scrim — keeps hero copy readable */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-transparent" />
 
-      <div className="relative z-10 w-full px-6 md:px-12 lg:px-20 pb-16 md:pb-24">
+      <div className="relative z-10 w-full px-6 md:px-12 lg:px-20 pb-safe md:pb-24">
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -47,7 +48,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="mt-10"
+          className="mt-10 flex flex-col sm:flex-row flex-wrap gap-4"
         >
           <Button
             href={CONTACT.instagram}
@@ -57,6 +58,15 @@ export function Hero() {
           >
             <InstagramIcon />
             {t("instagram")}
+          </Button>
+          <Button
+            href={CONTACT.telegram}
+            variant="outline"
+            external
+            className="!text-white !border-white/50 hover:!bg-white/10 hover:!border-white shadow-lg shadow-black/20"
+          >
+            <TelegramIcon />
+            {t("telegram")}
           </Button>
         </motion.div>
       </div>

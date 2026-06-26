@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 
@@ -20,6 +20,12 @@ export const metadata: Metadata = {
   title: "Susi Lash — Luxury Lash Artist",
   description:
     "Internationally recognized luxury lash artist Susi Manukyan. Bespoke lash extensions crafted with precision and elegance.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({

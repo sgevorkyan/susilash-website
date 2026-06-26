@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { InstagramIcon } from "@/components/ui/InstagramIcon";
+import { TelegramIcon } from "@/components/ui/TelegramIcon";
 import { MailIcon } from "@/components/ui/MailIcon";
 import { PhoneIcon } from "@/components/ui/PhoneIcon";
 import { SITE, CONTACT } from "@/lib/constants";
@@ -40,6 +41,20 @@ export async function Footer() {
           >
             <InstagramIcon />
             {CONTACT.instagramHandle}
+          </a>
+          <span
+            className="hidden sm:block w-px h-4 bg-foreground/10"
+            aria-hidden="true"
+          />
+          <a
+            href={CONTACT.telegram}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2.5 text-sm text-muted hover:text-gold transition-colors duration-300"
+            aria-label={t("telegram")}
+          >
+            <TelegramIcon />
+            {CONTACT.telegramCommunity}
           </a>
           <span
             className="hidden sm:block w-px h-4 bg-foreground/10"
