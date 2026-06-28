@@ -5,7 +5,7 @@ import { useTranslations } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
 import { LanguageSwitcher } from "@/components/layout/LanguageSwitcher";
 import { Logo } from "@/components/ui/Logo";
-import { NAV_LINKS, type NavLink } from "@/lib/constants";
+import { getNavLinks, type NavLink } from "@/lib/constants";
 
 function getNavHref(link: NavLink) {
   if ("hash" in link) {
@@ -20,8 +20,8 @@ export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const isHome = pathname === "/";
-  const onHero = isHome && !scrolled && !menuOpen;
+  const hasHeroHeader = pathname === "/" || pathname === "/products";
+  const onHero = hasHeroHeader && !scrolled && !menuOpen;
   const barColor = onHero ? "bg-white" : "bg-foreground";
 
   const linkClass = (extra = "") =>
@@ -30,6 +30,8 @@ export function Navigation() {
         ? "text-white/90 hover:text-white hero-scrim-text"
         : "text-foreground/70 hover:text-foreground"
     } ${extra}`.trim();
+
+  const navLinks = getNavLinks();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -48,7 +50,7 @@ export function Navigation() {
     <>
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-          scrolled || menuOpen || !isHome
+          scrolled || menuOpen || !hasHeroHeader
             ? "bg-background/95 backdrop-blur-md border-b border-foreground/5"
             : "bg-transparent"
         }`}
@@ -69,7 +71,7 @@ export function Navigation() {
           </Link>
 
           <ul className="hidden lg:flex items-center gap-8">
-            {NAV_LINKS.map((link) => (
+            {navLinks.map((link) => (
               <li key={link.key}>
                 <Link href={getNavHref(link)} className={linkClass()}>
                   {t(link.key)}
@@ -107,7 +109,7 @@ export function Navigation() {
         }`}
       >
         <nav className="flex flex-col items-center justify-center h-full gap-10 px-6">
-          {NAV_LINKS.map((link, i) => (
+          {navLinks.map((link, i) => (
             <Link
               key={link.key}
               href={getNavHref(link)}

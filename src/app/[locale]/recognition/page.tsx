@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { Recognition } from "@/components/sections/Recognition";
 import { routing, type Locale } from "@/i18n/routing";
-import { SITE } from "@/lib/constants";
+import { SITE, VISIBLE_SECTIONS } from "@/lib/constants";
+import { notFound } from "next/navigation";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -25,6 +26,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 export default async function RecognitionPage({ params }: Props) {
+  if (!VISIBLE_SECTIONS.recognition) {
+    notFound();
+  }
+
   const { locale } = await params;
   setRequestLocale(locale as Locale);
 

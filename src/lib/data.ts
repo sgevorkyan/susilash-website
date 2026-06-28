@@ -46,6 +46,38 @@ export const PORTFOLIO_IMAGES: PortfolioImage[] = [
 
 export const ABOUT_IMAGE = "/about/susi-about.webp";
 
+export const FLAGSHIP_PRODUCT_ID = "lash-extensions";
+
+/** Homepage carousel order — full catalog lives in messages/products.items. */
+export const HOME_CAROUSEL_PRODUCT_IDS = [
+  "lash-extensions",
+  "lash-extensions2",
+  "lash-boxes",
+  "lash-tweezers",
+  "lash-brushes2",
+  "lash-mirrors",
+] as const;
+
+/** Bump when replacing files in /public to bust browser and CDN cache. */
+export const PUBLIC_ASSET_VERSION = "3";
+
+function publicAsset(path: string) {
+  return `${path}?v=${PUBLIC_ASSET_VERSION}`;
+}
+
+export const PRODUCTS_HERO_IMAGE = {
+  src: publicAsset("/products/products-hero.webp"),
+  width: 1672,
+  height: 941,
+} as const;
+
+/** Portrait crop for mobile — Susi with the product in frame. */
+export const PRODUCTS_HERO_IMAGE_MOBILE = {
+  src: publicAsset("/products/products-hero-mobile.webp"),
+  width: 900,
+  height: 1080,
+} as const;
+
 export interface ProductImage {
   src: string;
   width: number;
@@ -59,6 +91,11 @@ export const PRODUCT_IMAGES: Record<string, ProductImage | null> = {
     width: 4499,
     height: 4498,
   },
+  "lash-extensions2": {
+    src: "/products/lash-extensions2.webp",
+    width: 4146,
+    height: 4146,
+  },
   "lash-boxes": {
     src: "/products/lash-boxes.webp",
     width: 4058,
@@ -69,10 +106,20 @@ export const PRODUCT_IMAGES: Record<string, ProductImage | null> = {
     width: 3714,
     height: 4643,
   },
+  "lash-brushes2": {
+    src: "/products/lash-brushes2.webp",
+    width: 4160,
+    height: 4160,
+  },
   "lash-mirrors": {
     src: "/products/lash-mirrors.webp",
     width: 3847,
     height: 4809,
+  },
+  "lash-tweezers": {
+    src: "/products/lash-tweezers.webp",
+    width: 4130,
+    height: 4130,
   },
 };
 

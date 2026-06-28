@@ -16,6 +16,8 @@ export const CONTACT = {
   email: "info@susilash.com",
   instagram: "https://www.instagram.com/susi.lash",
   instagramHandle: "@susi.lash",
+  instagramShop: "https://www.instagram.com/susi.lash.shop",
+  instagramShopHandle: "@susi.lash.shop",
   telegram: "https://t.me/+uNgkA7p4cjE3MzZi",
   telegramCommunity: "Susi Lash Community",
   phone: "+37495280200",
@@ -24,7 +26,8 @@ export const CONTACT = {
 } as const;
 
 export type NavLink =
-  | { key: "work" | "about" | "products" | "contact"; href: "/"; hash: string }
+  | { key: "work" | "about" | "contact"; href: "/"; hash: string }
+  | { key: "products"; href: "/products" }
   | {
       key: "recognition" | "testimonials";
       href: "/recognition" | "/client_testimonials";
@@ -33,11 +36,25 @@ export type NavLink =
 export const NAV_LINKS: NavLink[] = [
   { key: "work", href: "/", hash: "work" },
   { key: "about", href: "/", hash: "about" },
-  { key: "products", href: "/", hash: "products" },
+  { key: "products", href: "/products" },
   { key: "recognition", href: "/recognition" },
   { key: "testimonials", href: "/client_testimonials" },
   { key: "contact", href: "/", hash: "contact" },
 ];
+
+/** Toggle sections on/off without removing content. */
+export const VISIBLE_SECTIONS = {
+  recognition: false,
+  testimonials: false,
+} as const;
+
+export function getNavLinks(): NavLink[] {
+  return NAV_LINKS.filter((link) => {
+    if (link.key === "recognition") return VISIBLE_SECTIONS.recognition;
+    if (link.key === "testimonials") return VISIBLE_SECTIONS.testimonials;
+    return true;
+  });
+}
 
 export const OG_IMAGE =
   "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=1200&q=80";

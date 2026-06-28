@@ -32,7 +32,7 @@
     "viewImage": "View image",
     "items": {
       "1": "Magic",
-      "2": "Wet Look",
+      "2": "Mascara",
       "3": "Sky",
       "4": "Glam",
       "5": "Sky",
@@ -62,13 +62,38 @@
     "label": "The Collection",
     "title": "Susi Lash Products",
     "description": "A professional lash care line developed by Susi — refined formulas and tools created for artists and clients who expect the same standard of excellence as her studio work.",
-    "cta": "Inquire on Instagram",
+    "cta": "Instagram",
     "telegramCta": "Join on Telegram",
+    "viewAll": "View All Products",
+    "backToHome": "Back to Home",
+    "previous": "Previous product",
+    "next": "Next product",
+    "hero": {
+      "tagline": "The Collection",
+      "title": "Lash Extensions",
+      "subtitle": "The heart of the line — personally developed by {artist} for lash artists who expect studio-level precision and quiet luxury.",
+      "imageAlt": "Susi Lash lash extensions — the flagship product of the collection",
+      "imageAltMobile": "Susi Manukyan presenting Susi Lash lash extensions",
+      "founderLabel": "Curated by",
+      "founderAlt": "{artist} — founder of Susi Lash",
+      "cta": "Shop on Instagram",
+      "backToHome": "Back to Home"
+    },
+    "grid": {
+      "label": "The Line",
+      "title": "Complete the Collection",
+      "description": "Every tool and formula designed to uphold the same standard of excellence found in Susi's studio."
+    },
     "items": [
       {
         "id": "lash-extensions",
         "name": "Lash Extensions",
         "description": "Premium lash trays in curated lengths and curls — selected for precision application and signature Susi Lash styling."
+      },
+      {
+        "id": "lash-extensions2",
+        "name": "Volume Lash Extensions",
+        "description": "Curated lash trays in refined lengths and curls — crafted for volume artistry and signature Susi Lash results."
       },
       {
         "id": "lash-boxes",
@@ -81,9 +106,19 @@
         "description": "Professional application brushes crafted for controlled, flawless placement during every lash service."
       },
       {
+        "id": "lash-brushes2",
+        "name": "Lash Cleansing Brushes",
+        "description": "Fine cleansing brushes designed for gentle, thorough lash care between appointments."
+      },
+      {
         "id": "lash-mirrors",
         "name": "Lash Mirrors",
         "description": "Precision mirrors for detailed lash work — essential tools for perfect angles and refined finishing."
+      },
+      {
+        "id": "lash-tweezers",
+        "name": "Lash Tweezers",
+        "description": "Precision tweezers engineered for isolation and placement — an essential tool for flawless lash application."
       }
     ]
   },
@@ -155,9 +190,10 @@
   "contact": {
     "label": "Get in Touch",
     "title": "Begin Your Journey",
-    "description": "Experience the art of luxury lash extensions. Reach out via Instagram, Telegram, phone, or email to connect.",
+    "description": "Call or message us to book your appointment. We look forward to welcoming you to the studio.",
+    "call": "Call",
     "instagram": "Instagram",
-    "telegram": "Telegram",
+    "telegramHint": "For news, tips, and masterclass updates, join our community channel.",
     "email": "Email",
     "phone": "Phone",
     "location": "Location",

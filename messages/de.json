@@ -32,7 +32,7 @@
     "viewImage": "Bild ansehen",
     "items": {
       "1": "Magic",
-      "2": "Wet Look",
+      "2": "Mascara",
       "3": "Sky",
       "4": "Glam",
       "5": "Sky",
@@ -62,13 +62,38 @@
     "label": "Die Kollektion",
     "title": "Susi Lash Produkte",
     "description": "Eine professionelle Wimpernpflegelinie von Susi — raffinierte Formeln und Tools für Artists und Kundinnen, die denselben Exzellenzstandard erwarten wie ihre Studioarbeit.",
-    "cta": "Anfrage auf Instagram",
+    "cta": "Instagram",
     "telegramCta": "Auf Telegram beitreten",
+    "viewAll": "Alle Produkte ansehen",
+    "backToHome": "Zur Startseite",
+    "previous": "Vorheriges Produkt",
+    "next": "Nächstes Produkt",
+    "hero": {
+      "tagline": "Die Kollektion",
+      "title": "Lash Extensions",
+      "subtitle": "Das Herz der Linie — persönlich von {artist} entwickelt für Lash-Artists, die Studio-Präzision und leise Luxus erwarten.",
+      "imageAlt": "Susi Lash Wimpernextensions — das Flaggschiff der Kollektion",
+      "imageAltMobile": "Susi Manukyan präsentiert Susi Lash Wimpernextensions",
+      "founderLabel": "Kuratiert von",
+      "founderAlt": "{artist} — Gründerin von Susi Lash",
+      "cta": "Auf Instagram shoppen",
+      "backToHome": "Zur Startseite"
+    },
+    "grid": {
+      "label": "Die Linie",
+      "title": "Die Kollektion vervollständigen",
+      "description": "Jedes Tool und jede Formel — nach demselben Exzellenzstandard wie in Susis Studio."
+    },
     "items": [
       {
         "id": "lash-extensions",
         "name": "Lash Extensions",
         "description": "Premium-Wimperntrays in kuratierten Längen und Biegungen — für präzise Applikation und den Susi-Lash-Signaturstil."
+      },
+      {
+        "id": "lash-extensions2",
+        "name": "Volume Lash Extensions",
+        "description": "Kuratierte Wimperntrays in ausgewählten Längen und Biegungen — für Volume-Arbeit und charakteristische Susi-Lash-Ergebnisse."
       },
       {
         "id": "lash-boxes",
@@ -81,9 +106,19 @@
         "description": "Professionelle Applikationspinsel für kontrollierte, makellose Platzierung bei jedem Wimpernservice."
       },
       {
+        "id": "lash-brushes2",
+        "name": "Lash Cleansing Brushes",
+        "description": "Feine Reinigungspinsel für sanfte, gründliche Wimpernpflege zwischen den Terminen."
+      },
+      {
         "id": "lash-mirrors",
         "name": "Lash Mirrors",
         "description": "Präzisionsspiegel für detaillierte Wimpernarbeit — unverzichtbare Tools für perfekte Winkel und feine Finishes."
+      },
+      {
+        "id": "lash-tweezers",
+        "name": "Lash Tweezers",
+        "description": "Präzisionspinzetten für Isolation und Platzierung — ein unverzichtbares Tool für makellose Wimpernapplikation."
       }
     ]
   },
@@ -155,9 +190,10 @@
   "contact": {
     "label": "Kontakt",
     "title": "Beginnen Sie Ihre Reise",
-    "description": "Erleben Sie die Kunst der Luxus-Wimpernverlängerung. Kontaktieren Sie uns über Instagram, Telegram, Telefon oder E-Mail.",
+    "description": "Rufen Sie uns an oder schreiben Sie uns, um einen Termin zu vereinbaren. Wir freuen uns auf Ihren Besuch im Studio.",
+    "call": "Anrufen",
     "instagram": "Instagram",
-    "telegram": "Telegram",
+    "telegramHint": "Für Neuigkeiten, Tipps und Masterclass-Updates treten Sie unserem Community-Kanal bei.",
     "email": "E-Mail",
     "phone": "Telefon",
     "location": "Standort",

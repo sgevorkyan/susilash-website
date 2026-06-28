@@ -1,12 +1,25 @@
 import type { MetadataRoute } from "next";
-import { SITE } from "@/lib/constants";
+import { SITE, VISIBLE_SECTIONS } from "@/lib/constants";
 import { routing } from "@/i18n/routing";
 
-const PAGES = ["", "/recognition", "/client_testimonials"] as const;
+function getSitemapPages() {
+  const pages = ["", "/products"] as string[];
+
+  if (VISIBLE_SECTIONS.recognition) {
+    pages.push("/recognition");
+  }
+  if (VISIBLE_SECTIONS.testimonials) {
+    pages.push("/client_testimonials");
+  }
+
+  return pages;
+}
 
 export default function sitemap(): MetadataRoute.Sitemap {
+  const pages = getSitemapPages();
+
   return routing.locales.flatMap((locale) =>
-    PAGES.map((page) => ({
+    pages.map((page) => ({
       url: `${SITE.url}/${locale}${page}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,

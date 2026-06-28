@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { setRequestLocale, getTranslations } from "next-intl/server";
-import { Testimonials } from "@/components/sections/Testimonials";
+import { ProductsHero } from "@/components/sections/ProductsHero";
+import { Products } from "@/components/sections/Products";
 import { routing, type Locale } from "@/i18n/routing";
-import { SITE, VISIBLE_SECTIONS } from "@/lib/constants";
-import { notFound } from "next/navigation";
+import { SITE } from "@/lib/constants";
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -11,35 +11,29 @@ type Props = {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "testimonials" });
+  const t = await getTranslations({ locale, namespace: "products" });
 
   return {
     title: t("title"),
     description: t("description"),
     alternates: {
-      canonical: `${SITE.url}/${locale}/client_testimonials`,
+      canonical: `${SITE.url}/${locale}/products`,
       languages: Object.fromEntries(
-        routing.locales.map((loc) => [
-          loc,
-          `${SITE.url}/${loc}/client_testimonials`,
-        ]),
+        routing.locales.map((loc) => [loc, `${SITE.url}/${loc}/products`]),
       ),
     },
   };
 }
 
-export default async function ClientTestimonialsPage({ params }: Props) {
-  if (!VISIBLE_SECTIONS.testimonials) {
-    notFound();
-  }
-
+export default async function ProductsPage({ params }: Props) {
   const { locale } = await params;
   setRequestLocale(locale as Locale);
 
   return (
-    <div className="pt-20">
-      <Testimonials />
-    </div>
+    <>
+      <ProductsHero />
+      <Products variant="page" />
+    </>
   );
 }
 

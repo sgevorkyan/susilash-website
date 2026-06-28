@@ -1,18 +1,11 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { Lightbox } from "@/components/ui/Lightbox";
 import { PORTFOLIO_IMAGES } from "@/lib/data";
 
-export function Portfolio() {
-  const t = useTranslations("portfolio");
-  const [lightbox, setLightbox] = useState<{ src: string; alt: string } | null>(
-    null,
-  );
+export async function Portfolio() {
+  const t = await getTranslations("portfolio");
 
   return (
     <section id="work" className="py-24 md:py-32 lg:py-40">
@@ -38,13 +31,9 @@ export function Portfolio() {
               <FadeIn
                 key={item.id}
                 delay={i * 0.1}
-                className="group relative aspect-square overflow-hidden cursor-pointer"
+                className="group relative aspect-square overflow-hidden"
               >
-                <button
-                  onClick={() => setLightbox({ src: item.src, alt })}
-                  className="relative w-full h-full block"
-                  aria-label={`${t("viewImage")}: ${alt}`}
-                >
+                <div className="relative w-full h-full">
                   <Image
                     src={item.src}
                     alt={alt}
@@ -58,21 +47,12 @@ export function Portfolio() {
                       {alt}
                     </p>
                   </div>
-                </button>
+                </div>
               </FadeIn>
             );
           })}
         </div>
       </div>
-
-      {lightbox && (
-        <Lightbox
-          src={lightbox.src}
-          alt={lightbox.alt}
-          isOpen={!!lightbox}
-          onClose={() => setLightbox(null)}
-        />
-      )}
     </section>
   );
 }
