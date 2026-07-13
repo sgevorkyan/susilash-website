@@ -3,7 +3,7 @@ import { SITE, VISIBLE_SECTIONS } from "@/lib/constants";
 import { routing } from "@/i18n/routing";
 
 function getSitemapPages() {
-  const pages = ["", "/products"] as string[];
+  const pages = ["", "/products", "/about", "/courses"] as string[];
 
   if (VISIBLE_SECTIONS.recognition) {
     pages.push("/recognition");

@@ -53,6 +53,7 @@ export const HOME_CAROUSEL_PRODUCT_IDS = [
   "lash-extensions",
   "lash-extensions2",
   "lash-boxes",
+  "lash-trays",
   "lash-tweezers",
   "lash-brushes2",
   "lash-mirrors",
@@ -100,6 +101,11 @@ export const PRODUCT_IMAGES: Record<string, ProductImage | null> = {
     src: "/products/lash-boxes.webp",
     width: 4058,
     height: 5073,
+  },
+  "lash-trays": {
+    src: "/products/lash-trays.webp",
+    width: 3848,
+    height: 4810,
   },
   "lash-brushes": {
     src: "/products/lash-brushes.webp",

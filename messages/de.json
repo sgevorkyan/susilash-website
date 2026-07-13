@@ -8,7 +8,7 @@
   },
   "nav": {
     "work": "Arbeiten",
-    "about": "Über uns",
+    "about": "Über mich",
     "products": "Produkte",
     "recognition": "Auszeichnungen",
     "testimonials": "Stimmen",
@@ -40,14 +40,19 @@
     }
   },
   "about": {
-    "label": "Ihre Geschichte",
-    "title": "Über Susi",
-    "imageAlt": "{artist} — Luxus Wimpernstylistin",
+    "label": "Meine Geschichte",
+    "title": "Über mich",
+    "imageAlt": "{artist} — Spezialistin für Wimpern und Augenbrauen",
     "bio": [
-      "Susi Manukyan ist eine international anerkannte Wimpernstylistin, deren Arbeit an der Schnittstelle von Präzisionshandwerk und High Fashion steht. Mit über einem Jahrzehnt engagierter Praxis hat sie sich einen Ruf für Wimpernverlängerungen erworben, die natürliche Schönheit mit stiller Selbstsicherheit betonen.",
-      "In Europa und den Vereinigten Staaten ausgebildet, beherrscht Susi jede Disziplin der Wimpernkunst — von Classic und Hybrid bis Volume und Mega Volume. Ihr Ansatz ist zutiefst persönlich: Jedes Set wird in Zusammenarbeit mit der Kundin entworfen und auf Gesichtszüge, Lebensstil und ästhetische Vision abgestimmt.",
-      "Ihr Studio bietet eine Oase ruhiger Raffinesse, in der jedes Detail — von der Beratung bis zum abschließenden Bürstenstrich — denselben Exzellenzstandard widerspiegelt, den man in den feinsten Beauty-Häusern der Welt findet."
+      "Hallo, ich bin Susi — Spezialistin für Wimpern und Augenbrauen. Meine ersten Schritte in diesem Beruf habe ich vor Jahren gemacht. Es war eine der wichtigsten und richtigsten Entscheidungen meines Lebens.",
+      "Wie der Beginn jedes neuen Weges war auch dieser Weg für mich ziemlich schwer. Doch die Liebe zu all dem hat mir geholfen.",
+      "Ohne an Aufwand, Energie, Kraft, Zeit und Geld zu sparen, habe ich alle möglichen — und unmöglich erscheinenden — Fortbildungen in verschiedenen Teilen der Welt absolviert. All das hat mir große Anerkennung als führende und vertrauenswürdige Spezialistin eingebracht.",
+      "Danach hatte ich ein Ziel: meine eigene Marke zu schaffen."
     ],
+    "moreAbout": "Mehr über mich",
+    "courses": "Kurse",
+    "pageDescription": "Anerkennung, Zertifikate, Auszeichnungen und die Geschichte hinter Susi Lash.",
+    "backToHome": "Zur Startseite",
     "specializationsLabel": "Spezialisierungen",
     "specializations": [
       "Classic & Hybrid Extensions",
@@ -56,6 +61,36 @@
       "Korrektur-Wimperndesign",
       "Braut- & Editorial-Styling",
       "Private Masterclasses"
+    ]
+  },
+  "courses": {
+    "title": "Kurse",
+    "intro": "Bei mir gibt es Grundlagenkurse — in Gruppen- und Einzelunterricht.",
+    "details": [
+      "Kursdauer: 7 Unterrichtseinheiten",
+      "Dauer einer Einheit: 2–3 Stunden",
+      "Materialien: werden von mir gestellt",
+      "Models: werden von mir organisiert, oder Sie können selbst welche mitbringen"
+    ],
+    "body": [
+      "Im Kurs gehen wir alle Feinheiten der Wimpernauffüllung im Detail durch und festigen das Gelernte mit praktischer Arbeit.",
+      "Am Ende des Kurses erhalten Sie ein Zertifikat."
+    ],
+    "backToHome": "Zur Startseite",
+    "bookCall": "Anrufen",
+    "bookInstagram": "Auf Instagram buchen",
+    "upcoming": "Bevorstehend",
+    "past": "Vergangen",
+    "upcomingEmpty": "Derzeit keine bevorstehenden Kurse. Folge Susi auf Instagram und Telegram für neue Termine.",
+    "pastEmpty": "Vergangene Kurse erscheinen hier, nachdem sie stattgefunden haben.",
+    "items": [
+      {
+        "id": "essen-2026-10-02",
+        "title": "Masterclass in Essen",
+        "location": "Essen, Deutschland",
+        "description": "Ein ganztägiger professioneller Masterclass mit Susi — mit Fokus auf Präzisionstechnik, Artistry und Studio-Ergebnisse.",
+        "guests": "Gastrednerinnen: Takhmina und Katya"
+      }
     ]
   },
   "products": {
@@ -70,7 +105,7 @@
     "next": "Nächstes Produkt",
     "hero": {
       "tagline": "Die Kollektion",
-      "title": "Lash Extensions",
+      "title": "Lash Products",
       "subtitle": "Das Herz der Linie — persönlich von {artist} entwickelt für Lash-Artists, die Studio-Präzision und leise Luxus erwarten.",
       "imageAlt": "Susi Lash Wimpernextensions — das Flaggschiff der Kollektion",
       "imageAltMobile": "Susi Manukyan präsentiert Susi Lash Wimpernextensions",
@@ -99,6 +134,11 @@
         "id": "lash-boxes",
         "name": "Lash Boxes",
         "description": "Elegante Aufbewahrungslösungen, die Wimpernprodukte organisiert, geschützt und präsentationsbereit im Studio halten."
+      },
+      {
+        "id": "lash-trays",
+        "name": "Lash Trays",
+        "description": "Eine Kunststoff-Arbeitsablage zum vorübergehenden Befestigen von Wimpern — als Palette (Planshet) während der Anwendung für organisierte, effiziente Studioarbeit."
       },
       {
         "id": "lash-brushes",

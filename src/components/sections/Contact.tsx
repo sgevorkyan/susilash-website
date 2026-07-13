@@ -17,9 +17,6 @@ export async function Contact() {
       <div className="mx-auto px-6 md:px-12 lg:px-20">
         <div className="max-w-2xl mx-auto text-center">
           <FadeIn>
-            <p className="text-xs tracking-[0.3em] uppercase text-gold mb-4">
-              {t("label")}
-            </p>
             <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-light tracking-tight leading-[1.1]">
               {t("title")}
             </h2>

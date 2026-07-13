@@ -11,7 +11,6 @@ export async function Portfolio() {
     <section id="work" className="py-24 md:py-32 lg:py-40">
       <div className="mx-auto px-6 md:px-12 lg:px-20">
         <SectionHeading
-          label={t("label")}
           title={t("title")}
           description={t("description")}
         />

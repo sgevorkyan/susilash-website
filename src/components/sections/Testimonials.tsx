@@ -16,7 +16,6 @@ export async function Testimonials() {
     <section id="testimonials" className="py-24 md:py-32 lg:py-40 bg-beige/40">
       <div className="mx-auto px-6 md:px-12 lg:px-20">
         <SectionHeading
-          label={t("label")}
           title={t("title")}
           align="center"
         />

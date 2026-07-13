@@ -40,7 +40,6 @@ export async function Products({ variant = "preview" }: ProductsProps) {
     >
       <div className="mx-auto px-6 md:px-12 lg:px-20">
         <SectionHeading
-          label={variant === "preview" ? t("label") : t("grid.label")}
           title={variant === "preview" ? t("title") : t("grid.title")}
           description={variant === "preview" ? t("description") : t("grid.description")}
           action={
@@ -53,13 +52,7 @@ export async function Products({ variant = "preview" }: ProductsProps) {
         />
 
         {variant === "preview" ? (
-          <FadeIn delay={0.15}>
-            <ProductCarousel
-              items={carouselItems}
-              previousLabel={t("previous")}
-              nextLabel={t("next")}
-            />
-          </FadeIn>
+          <ProductCarousel items={carouselItems} />
         ) : (
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
             {items.map((item, i) => {

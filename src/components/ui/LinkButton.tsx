@@ -2,7 +2,7 @@ import { type ReactNode } from "react";
 import { Link } from "@/i18n/navigation";
 
 interface LinkButtonProps {
-  href: "/" | "/products";
+  href: "/" | "/products" | "/about" | "/courses";
   children: ReactNode;
   variant?: "primary" | "outline" | "ghost";
   className?: string;
