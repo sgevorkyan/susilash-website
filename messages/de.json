@@ -89,7 +89,21 @@
         "title": "Masterclass in Essen",
         "location": "Essen, Deutschland",
         "description": "Ein ganztägiger professioneller Masterclass mit Susi — mit Fokus auf Präzisionstechnik, Artistry und Studio-Ergebnisse.",
-        "guests": "Gastrednerinnen: Takhmina und Katya"
+        "guests": "Rednerinnen: Susi (Lash Curls & Trends), Takhmina (Air · Lami · American), Katya (Angel · Selectiv · Lash Makeup)"
+      },
+      {
+        "id": "yerevan-2026-09-19",
+        "title": "Masterclass in Jerewan",
+        "location": "Jerewan, Armenien",
+        "description": "Zwei Tage exklusive Techniken mit drei internationalen Rednerinnen — organisiert und geleitet von Susi. Ein unvergesslicher Masterclass.",
+        "guests": "Rednerinnen: Susi (Lash Curls & Trends), Takhmina (Air · Lami · American), Katya (Angel · Selectiv · Lash Makeup)"
+      },
+      {
+        "id": "yerevan-2026-04-10",
+        "title": "DVIN Masterclass",
+        "location": "Jerewan, Armenien",
+        "description": "Ein Masterclass für Wimpernverlängerung mit den besten Spezialistinnen.",
+        "guests": "Mit 4 Gastspezialistinnen aus Russland"
       }
     ]
   },
@@ -168,40 +182,34 @@
     "description": "Eine Karriere geprägt von Meisterschaft, internationaler Anerkennung und einem unerschütterlichen Engagement für die Kunst der Wimpernverlängerung.",
     "items": [
       {
+        "year": "2025",
+        "title": "Art Director & Globale Jurorin",
+        "organization": "OMC",
+        "description": "Art Director der Wimpernverlängerungs-Sektion und globale Jurorin. Seit 3. September 2025."
+      },
+      {
+        "year": "2025",
+        "title": "Jurorin & Richterin",
+        "organization": "Dr. Lash — Jerewan",
+        "description": "Tätig als Jurorin und Richterin. 9. Februar 2025."
+      },
+      {
         "year": "2024",
-        "title": "Internationale Wimpernstylistin des Jahres",
-        "organization": "World Lash Association",
-        "description": "Ausgezeichnet für Exzellenz in Volume- und Hybrid-Wimpernkunst."
+        "title": "Rednerin & Jurorin",
+        "organization": "Best Look Championship — Moskau",
+        "description": "Rednerin und Jurorin bei Championship und Workshop. 17.–20. Oktober 2024."
+      },
+      {
+        "year": "2024",
+        "title": "Jurorin & Sponsorin",
+        "organization": "Queen Lash — Kasachstan",
+        "description": "Tätig als Jurorin und Sponsorin. 5.–8. Mai 2024."
       },
       {
         "year": "2023",
-        "title": "Goldmedaille — Kreatives Wimperndesign",
-        "organization": "Global Beauty Championships",
-        "description": "Erster Platz in der internationalen Kategorie für kreatives Wimperndesign."
-      },
-      {
-        "year": "2023",
-        "title": "Master Wimperntechnikerin Zertifizierung",
-        "organization": "Elite Lash Academy",
-        "description": "Fortgeschrittene Zertifizierung in Volume, Mega Volume und Korrekturtechniken."
-      },
-      {
-        "year": "2022",
-        "title": "Featured Artist",
-        "organization": "Lash Inc. Magazine",
-        "description": "Editorial-Feature über die Evolution von Luxus-Wimpernverlängerungen."
-      },
-      {
-        "year": "2022",
-        "title": "Europäischer Wimpernwettbewerb — Finalistin",
-        "organization": "EuroLash Summit",
-        "description": "Top-Fünf-Finalistin unter über 200 internationalen Teilnehmerinnen."
-      },
-      {
-        "year": "2021",
-        "title": "Zertifizierte Wimpern-Dozentin",
-        "organization": "International Lash Institute",
-        "description": "Lizenziert zur Ausbildung und Zertifizierung angehender Wimpernprofis."
+        "title": "Best Effect No.1 Spezialistin",
+        "organization": "N.ONE Corporation — VAE",
+        "description": "Ausgezeichnet als Best Effect No.1 Spezialistin. 24. Oktober 2023."
       }
     ]
   },

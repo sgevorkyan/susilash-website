@@ -89,7 +89,21 @@
         "title": "Masterclass in Essen",
         "location": "Essen, Germany",
         "description": "A full-day professional masterclass with Susi — focused on precision technique, artistry, and studio-level results.",
-        "guests": "Guest speakers: Takhmina and Katya"
+        "guests": "Speakers: Susi (Lash Curls & Trends), Takhmina (Air · Lami · American), Katya (Angel · Selectiv · Lash Makeup)"
+      },
+      {
+        "id": "yerevan-2026-09-19",
+        "title": "Master Class in Yerevan",
+        "location": "Yerevan, Armenia",
+        "description": "Two days of exclusive techniques with three international speakers — organised and led by Susi. One unforgettable master class.",
+        "guests": "Speakers: Susi (Lash Curls & Trends), Takhmina (Air · Lami · American), Katya (Angel · Selectiv · Lash Makeup)"
+      },
+      {
+        "id": "yerevan-2026-04-10",
+        "title": "DVIN Master Class",
+        "location": "Yerevan, Armenia",
+        "description": "A lash extension master class bringing together top lash specialists.",
+        "guests": "Featuring 4 guest specialists from Russia"
       }
     ]
   },
@@ -105,7 +119,7 @@
     "next": "Next product",
     "hero": {
       "tagline": "The Collection",
-      "title": "Lash Extensions",
+      "title": "Lash Products",
       "subtitle": "The heart of the line — personally developed by {artist} for lash artists who expect studio-level precision and quiet luxury.",
       "imageAlt": "Susi Lash lash extensions — the flagship product of the collection",
       "imageAltMobile": "Susi Manukyan presenting Susi Lash lash extensions",
@@ -168,40 +182,34 @@
     "description": "A career defined by mastery, international acclaim, and an unwavering commitment to the art of lash extensions.",
     "items": [
       {
+        "year": "2025",
+        "title": "Art Director & Global Juror",
+        "organization": "OMC",
+        "description": "Art director of the lash extension section and global juror. Since September 3, 2025."
+      },
+      {
+        "year": "2025",
+        "title": "Juror & Judge",
+        "organization": "Dr. Lash — Yerevan",
+        "description": "Served as juror and judge. February 9, 2025."
+      },
+      {
         "year": "2024",
-        "title": "International Lash Artist of the Year",
-        "organization": "World Lash Association",
-        "description": "Recognized for excellence in volume and hybrid lash artistry."
+        "title": "Speaker & Juror",
+        "organization": "Best Look Championship — Moscow",
+        "description": "Speaker and juror at the championship and workshop. October 17–20, 2024."
+      },
+      {
+        "year": "2024",
+        "title": "Juror & Sponsor",
+        "organization": "Queen Lash — Kazakhstan",
+        "description": "Served as juror and sponsor. May 5–8, 2024."
       },
       {
         "year": "2023",
-        "title": "Gold Medal — Creative Lash Design",
-        "organization": "Global Beauty Championships",
-        "description": "First place in the international creative lash category."
-      },
-      {
-        "year": "2023",
-        "title": "Master Lash Technician Certification",
-        "organization": "Elite Lash Academy",
-        "description": "Advanced certification in volume, mega volume, and corrective techniques."
-      },
-      {
-        "year": "2022",
-        "title": "Featured Artist",
-        "organization": "Lash Inc. Magazine",
-        "description": "Editorial feature on the evolution of luxury lash extensions."
-      },
-      {
-        "year": "2022",
-        "title": "European Lash Competition — Finalist",
-        "organization": "EuroLash Summit",
-        "description": "Top five finalist among 200+ international competitors."
-      },
-      {
-        "year": "2021",
-        "title": "Certified Lash Educator",
-        "organization": "International Lash Institute",
-        "description": "Licensed to train and certify aspiring lash professionals."
+        "title": "Best Effect No.1 Specialist",
+        "organization": "N.ONE Corporation — UAE",
+        "description": "Awarded Best Effect No.1 Specialist. October 24, 2023."
       }
     ]
   },

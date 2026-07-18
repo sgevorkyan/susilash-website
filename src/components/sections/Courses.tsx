@@ -81,7 +81,7 @@ function CourseGrid({
             <CourseCard
               course={course}
               copy={copy}
-              dateLabel={formatCourseDate(course.date, locale)}
+              dateLabel={formatCourseDate(course, locale)}
             />
           </FadeIn>
         );
